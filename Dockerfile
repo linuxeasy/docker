@@ -11,8 +11,6 @@ RUN mkdir -p /opt/tomcat && cd /opt/tomcat \
 	
 EXPOSE 8080
 
-CMD ["/opt/tomcat/apache-tomcat-8.5.32/bin/startup.sh"]
-
-
+CMD ["/opt/tomcat/apache-tomcat-8.5.32/bin/catalina.sh", "run"]
 
 
